@@ -1,0 +1,264 @@
+@import 'https://fonts.googleapis.com/css?family=Bangers|Fredoka+One|Scope+One';
+
+/*<-- Typografi -->*/
+a {
+    color:black;
+    vertical-align: -webkit-baseline-middle;
+}
+
+a:focus, a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, p:first-child {
+    color: black;
+}
+
+/* <-- Navbar --> */
+
+.navbar-default{
+    background-color: transparent;
+    border: none;
+    padding: 0px 20px;
+    transition: all .5s ease-in-out;
+}
+
+@media (max-width : 768px) {
+    .navbar-default{
+        background-color: #c0f2e6;
+    }
+    
+    .navbar-default .navbar-toggle {
+        border-color: #aaa;
+    }
+    
+    .navbar-default .navbar-toggle:hover {
+        background-color: #fff;
+    }
+}
+
+.navbar-default .navbar-nav li a {
+    color: white;
+    font-family: 'Scope One', serif;
+    font-size: larger;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #756c6c;;
+}
+
+.navbar-brand{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.navbar .navbar-brand> img{
+    width: 70px;
+}
+
+.change-color-bg{
+    background-color: #2babb5;
+}
+
+
+/* <-- Body --> */
+
+#main-content{
+    padding-top: 100px; 
+    padding-bottom: 50px;  
+    background-image: url("../image/backgrounds.jpg");
+    background-size: cover;
+    min-height:100vh;
+    
+}
+
+#createHomeNote input {
+    height:45px;
+    font-size: 17px;
+}
+
+.input-group-addon {
+    background-color: white;
+}
+
+/* <-- Notes --> */
+
+.notes .panel-default{
+    border-radius: 0px;
+    -webkit-transform:rotate(-6deg);
+    -o-transform:rotate(-6deg);
+    -moz-transform:rotate(-6deg);
+}
+
+.notes:nth-child(even) .panel-default{
+    -o-transform:rotate(4deg);
+    -webkit-transform:rotate(4deg);
+    -moz-transform:rotate(4deg);
+    position:relative;
+    top:5px;
+    background-color: #ffc;
+}
+
+.notes:nth-child(3n) .panel-default{
+    -o-transform:rotate(-3deg);
+    -webkit-transform:rotate(-3deg);
+    -moz-transform:rotate(-3deg);
+    position:relative;
+    top:-5px;
+    background-color: #cfc;
+}
+  
+.notes:nth-child(5n) .panel-default{
+    -o-transform:rotate(5deg);
+    -webkit-transform:rotate(5deg);
+    -moz-transform:rotate(5deg);
+    position:relative;
+    top:-10px;
+    backface-visibility: #ccf;
+}
+
+.notes .panel-default:hover{
+  -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+  box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  -o-transform: scale(1.25);
+  position:relative;
+  z-index:5;
+}
+
+.notes .panel-default{
+    margin:30px;
+  -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+  -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  -moz-transition:-moz-transform .15s linear;
+  -o-transition:-o-transform .15s linear;
+  -webkit-transition:-webkit-transform .15s linear;
+}
+
+.panel-body{
+    height: 300px;
+}
+
+.panel-body h3{
+    font-family: 'Fredoka One', cursive;
+    font-size: xx-large;
+    margin-bottom: 3px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.panel-body .place-date {
+    font-size: 12px;
+    color: #aaa;
+    text-align: center;
+    font-family: 'Scope One', serif;
+}
+
+.vertical-align {
+    position: relative;
+    top: 40%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+
+
+/*<-- edit note -->*/
+.modal-body .content{
+    margin: 20px;
+    line-height: 25px;
+    font-size: 15px;
+    font-family: 'Scope One', serif;
+}
+
+
+
+/* <-- Modal --> */
+.modal-content{
+    background-color: #e7fffe;
+    padding-bottom: 40px;
+}
+
+@media (max-width : 768px) {
+    .modal-content{
+        padding-bottom: 100px;
+    }
+    .modal-body #buttons .btn {
+        width: 100%;
+        margin: 5px 0px;
+    }
+}
+
+.modal-header{
+    border-bottom: 1px solid #848484;
+    color: black;
+    border-radius: 6px 6px 0px 0px;
+}
+
+.modal-header .modal-title{
+    text-align:center;
+    font-size: xx-large;
+    font-family: 'Fredoka One', cursive;
+}
+
+.modal-header p{
+    text-align:center;
+    font-size:12px;
+    margin-bottom: 0;
+    font-family: 'Scope One', serif;
+}
+
+.modal-body #buttons{
+    margin-top:30px;
+}
+
+.modal-body #buttons .btn{
+    width:95%;
+}
+
+/* <-- SignIn --> */
+#signin-content{
+    padding-top: 100px; 
+    padding-bottom: 50px;  
+    background-image: url("../image/backgrounds-login.jpg");
+    background-size: cover;
+    min-height:94vh;
+}
+
+#signin-content .panel{
+    margin-top: 70px;
+    background-color: rgba(249, 249, 249, 0.5);
+    border: 0px solid transparent;
+}
+
+#signin-content .panel .panel-body{
+    height: 200px;
+}
+
+#signin-content .panel .panel-body .col-md-8{
+    padding-left: 10px;
+}
+
+#signin-content .panel .panel-body a{
+    color:white;
+}
+
+#signin-content .panel .panel-body a:hover{
+    color:black;
+}
+
+
+/* <-- Footer --> */
+
+footer{
+/*    min-height: 300px;*/
+    background-color: #05383c;
+    padding: 10px 25px;
+    color:white;
+}
+
