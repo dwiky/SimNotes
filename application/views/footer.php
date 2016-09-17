@@ -47,6 +47,13 @@
     });
 </script>
 
+<!--call change profile picture form-->
+<script>
+    $('#profilepict').click(function() {
+        var url="<?php echo base_url('profile/changeProfilePict');?>" 
+        $('#myModal .modal-content').load(url);
+    });
+</script>
  
 <!--read single note-->
 <script>

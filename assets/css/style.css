@@ -39,7 +39,7 @@ h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, 
 }
 
 .navbar-default .navbar-nav li a {
-    color: white;
+    color: black;
     font-family: 'Scope One', serif;
     font-size: larger;
 }
@@ -56,6 +56,20 @@ h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, 
 .navbar .navbar-brand> img{
     width: 70px;
 }
+
+.navbar-nav>li>.dropdown-menu {
+    background-color: #77d4d4;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    background-color: #77d4d4;
+}
+
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+    background-color: #77d4d4;
+    font-size: 20px;
+}
+
 
 .change-color-bg{
     background-color: #2babb5;
@@ -139,7 +153,7 @@ h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, 
   -webkit-transition:-webkit-transform .15s linear;
 }
 
-.panel-body{
+#main-content .panel-body{
     height: 300px;
 }
 
@@ -177,6 +191,72 @@ h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, 
 }
 
 
+/* <-- Profile --> */
+
+#profile{
+    padding-top: 100px; 
+    padding-bottom: 50px;  
+    background-image: url("../image/backgrounds.jpg");
+    background-size: cover;
+    min-height:94vh; 
+}
+
+#profile .panel-body{
+    min-height: 300px;
+}
+
+#profile .panel-default{
+    min-height: 60vh;
+    background-color: rgba(255, 255, 255, 0.58);
+    border-color: transparent;
+}
+
+#profile #profilepict img{
+    border-radius: 200px;
+    box-shadow: 1px 5px 63px -1px rgba(0,0,0,0.75);
+    margin-top: 30px;
+    width: 220px;
+    height: 220px; 
+}
+
+#profile #profilepict span{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: #ddd;
+    padding: 20px;
+}
+
+#profile #profilepict:hover span {
+    margin-top: 180px;
+    display: block;
+}
+
+#profile #profilepict:hover img{
+    -webkit-filter: grayscale(100%);
+}
+
+#profile #profile-text{
+    margin-top:80px;
+}
+
+@media (max-width : 768px) {
+    #profile #profile-text {
+        margin-top: 40px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+}
+
+#profile p{
+    font-size: 18px;
+    color: #05383c;
+    margin-bottom: 5px;
+    font-family: 'Scope One', serif;
+}
 
 /* <-- Modal --> */
 .modal-content{

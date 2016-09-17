@@ -41,8 +41,10 @@ class SignIn extends CI_Controller {
         );
         $data["query"]=$this->user_model->signin($data);
         $username=$data["query"]->row()->username;
+        $email=$data["query"]->row()->email;
         if($data["query"]!=null){
 			$this->session->set_userdata('username',$username);
+            $this->session->set_userdata('email',$email);
             header("location:".base_url(""));
  		} else {
             echo 'Wrong Username or Password';

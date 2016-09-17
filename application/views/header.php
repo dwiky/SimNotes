@@ -1,5 +1,5 @@
 <?php
-if(!empty($this->session->userdata("username")))
+if(!empty($this->session->userdata("email")))
 $username=$this->session->userdata("username");
 
 defined('BASEPATH') OR exit('No direct script access allowed');
@@ -61,6 +61,7 @@ else {$login=true;}
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">'.$username.'<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="'.base_url('signout').'">Sign Out</a></li>
+            <li><a href="'.base_url('profile').'">My Profile</a></li>
           </ul>
         </li>
         ';} else {
