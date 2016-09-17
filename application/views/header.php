@@ -60,14 +60,14 @@ else {$login=true;}
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">'.$username.'<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="'.base_url('signout').'">Sign Out</a></li>
+            <li><a href="'.base_url('signOut').'">Sign Out</a></li>
             <li><a href="'.base_url('profile').'">My Profile</a></li>
           </ul>
         </li>
         ';} else {
             echo'
-        <li><a href="'.base_url('signin').'">SignIn</a></li>
-        <li><a href="'.base_url('signup').'">SignUp</a></li>
+        <li><a href="'.base_url('signIn').'">SignIn</a></li>
+        <li><a href="'.base_url('signUp').'">SignUp</a></li>
             ';}
           ?>
       </ul>
