@@ -5,7 +5,7 @@ $username=$this->session->userdata("username");
 defined('BASEPATH') OR exit('No direct script access allowed');
 if (empty($username)) {$login=false;}
 else {$login=true;}
-if ($login==false) {header("location:".base_url());}
+if ($login==false) {}//header("location:".base_url("signin"));}
 ?>
 
 <div id="main-content">
