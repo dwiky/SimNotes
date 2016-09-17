@@ -21,7 +21,6 @@ class SignIn extends CI_Controller {
 
 	public function index()
 	{ 
-		$this->load->library('session');
 		$this->load->view('header');
 		$this->load->view('signin_page');
 		$this->load->view('footer');
